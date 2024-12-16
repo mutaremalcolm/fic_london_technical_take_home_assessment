@@ -9,28 +9,31 @@ export default function CTA() {
           {/* Left Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-light tracking-wide text-neutral-900">
-              Experience Artisanal Excellence
+              Handcrafted Perfection
             </h2>
-            <p className="text-base md:text-lg text-neutral-600 leading-relaxed">
-              Discover our carefully curated collection of handcrafted brownies, 
-              made with premium ingredients and delivered fresh to your doorstep.
+            <p className="text-lg text-neutral-600">
+              Premium brownies, delivered fresh daily.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#order" 
-                className="inline-block bg-neutral-900 text-white px-8 py-3 
-                         text-sm uppercase tracking-wider
-                         hover:bg-neutral-800 transition-all duration-300 ease-in-out"
+                className="group inline-block bg-neutral-900 text-white px-8 py-3 
+                         text-sm uppercase tracking-wider relative overflow-hidden
+                         transition-all duration-300 ease-in-out
+                         hover:shadow-lg hover:-translate-y-0.5"
               >
-                Order Now
+                <span className="relative z-10">Order Now</span>
+                <div className="absolute inset-0 bg-neutral-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
               </a>
               <a 
                 href="#catalog" 
-                className="inline-block bg-transparent text-neutral-900 px-8 py-3 
-                         text-sm uppercase tracking-wider border border-neutral-900
-                         hover:bg-neutral-100 transition-all duration-300 ease-in-out"
+                className="group inline-block bg-transparent text-neutral-900 px-8 py-3 
+                         text-sm uppercase tracking-wider border border-neutral-900 relative
+                         transition-all duration-300 ease-in-out
+                         hover:shadow-lg hover:-translate-y-0.5"
               >
-                View Catalog
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">Catalog</span>
+                <div className="absolute inset-0 bg-neutral-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
               </a>
             </div>
           </div>
@@ -39,27 +42,33 @@ export default function CTA() {
           <div className="grid grid-cols-2 gap-6">
             {[
               {
-                title: "Artisanal Quality",
-                description: "Premium ingredients carefully selected for excellence"
+                title: "Artisanal",
+                description: "Premium ingredients"
               },
               {
-                title: "Fresh Delivery",
-                description: "Same-day delivery to ensure maximum freshness"
+                title: "Fresh",
+                description: "Same-day delivery"
               },
               {
-                title: "Custom Orders",
-                description: "Personalized options for special occasions"
+                title: "Custom",
+                description: "Special occasions"
               },
               {
-                title: "Gift Packaging",
-                description: "Elegant presentation for memorable moments"
+                title: "Gift Ready",
+                description: "Elegant packaging"
               }
             ].map((feature, index) => (
-              <div key={index} className="space-y-2 p-6 bg-white shadow-sm">
-                <h3 className="text-lg font-medium text-neutral-900">
+              <div 
+                key={index} 
+                className="group space-y-2 p-6 bg-white relative
+                         transition-all duration-300 ease-in-out
+                         hover:shadow-lg hover:-translate-y-1"
+              >
+                <div className="absolute inset-0 bg-neutral-900 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                <h3 className="text-lg font-medium text-neutral-900 relative">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-neutral-600 leading-relaxed">
+                <p className="text-sm text-neutral-600 relative">
                   {feature.description}
                 </p>
               </div>
@@ -68,9 +77,11 @@ export default function CTA() {
         </div>
 
         {/* Optional Bottom Banner */}
-        <div className="mt-16 p-8 bg-neutral-100 text-center">
+        <div className="mt-16 p-6 bg-neutral-100 text-center
+                      transition-all duration-300 ease-in-out
+                      hover:bg-neutral-200">
           <p className="text-sm text-neutral-600 tracking-wide">
-            Free delivery on orders above $50 • Same-day delivery available
+            Free delivery over £50
           </p>
         </div>
       </div>

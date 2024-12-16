@@ -3,27 +3,27 @@ import { ShoppingBagIcon, Search } from 'lucide-react';
 
 const nav = [
   { id: '0', title: 'Store Locator', url: '#' },
-  { id: '1', title: 'Careers', url: '#' },
-  { id: '2', title: 'Contact Us', url: '#' },
-  { id: '3', title: 'Instagram', url: '#' },
+  { id: '1', title: 'My Account', url: '#' },
+  { id: '2', title: 'Careers', url: '#' },
+  { id: '3', title: 'Contact Us', url: '#' },
 ];
 
 function Navigation() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/75 border-b border-gray-200">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-transparent border-b border-none">
       <div className="flex items-center justify-between px-6 lg:px-10 py-4">
         {/* Logo */}
-        <a className="text-chocolate hover:text-chocolate-hover uppercase" href="#hero">
+        <a className="text-2xl font-bold text-[rgba(95, 44, 30, 1)] uppercase text-white" href="#hero">
           Expressions
         </a>
         
         {/* Navigation Links */}
-        <nav className="hidden lg:flex space-x-8">
+        <nav className="hidden lg:flex items-end space-x-8 text-white">
           {nav.map((item) => (
             <a
               key={item.id}
               href={item.url}
-              className="text-chocolate hover:text-chocolate-hover transition duration-200 font-medium"
+              className="text-[rgba(95, 44, 30, 1)] hover:text-[rgba(68, 30, 20, 1)] transition duration-200 font-medium"
             >
               {item.title}
             </a>
@@ -31,9 +31,9 @@ function Navigation() {
         </nav>
 
         {/* Icons */}
-        <div className="flex items-center space-x-6">
-          <Search className="text-chocolate hover:text-chocolate-hover cursor-pointer" />
-          <ShoppingBagIcon className="text-chocolate hover:text-chocolate-hover cursor-pointer" />
+        <div className="flex items-center space-x-6 text-white">
+          <Search className="w-6 h-6 text-[rgba(95, 44, 30, 1)] hover:text-[rgba(68, 30, 20, 1)] cursor-pointer" />
+          <ShoppingBagIcon className="w-6 h-6 text-[rgba(95, 44, 30, 1)] hover:text-[rgba(68, 30, 20, 1)] cursor-pointer" />
         </div>
       </div>
 
@@ -43,7 +43,7 @@ function Navigation() {
           <a
             key={item.id}
             href={item.url}
-            className="text-chocolate hover:text-chocolate-hover transition duration-200 font-medium uppercase text-sm"
+            className="text-[rgba(95, 44, 30, 1)] hover:text-[rgba(68, 30, 20, 1)] transition duration-200 font-medium uppercase text-sm"
           >
             {item.title}
           </a>
