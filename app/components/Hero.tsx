@@ -51,25 +51,25 @@ const Hero = () => {
                 backgroundPosition: 'center',
               }}
             >
-              {/* Refined overlay with reduced opacity */}
-              <div className="absolute inset-0 bg-black/30"></div>
-              
-              {/* Container for right-aligned content */}
-              <div className="relative z-10 w-full flex justify-center ml-12 pr-8 md:pr-16 lg:pr-24">
-                <div className="text-white max-w-xl">
-                  <h1 className="text-4xl md:text-6xl font-light tracking-wide mb-4 leading-tight">
+              {/* Refined overlay */}
+              <div className="absolute inset-0 bg-black/40"></div>
+
+              {/* Content container */}
+              <div className="relative z-10 w-full px-4 md:px-8 lg:px-16 flex justify-start items-center">
+                <div className="text-white max-w-md md:max-w-lg lg:max-w-xl">
+                  <h1 className="text-3xl md:text-5xl font-light tracking-wide mb-4 leading-snug">
                     {slide.title}
                   </h1>
-                  <p className="text-base md:text-lg font-light tracking-wide mb-8 opacity-90">
+                  <p className="text-sm md:text-base font-light tracking-wide mb-6 opacity-90">
                     {slide.description}
                   </p>
                   <a
                     href={slide.buttonLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-white/10 backdrop-blur-sm text-white px-8 py-3 
-                             text-sm uppercase tracking-wider border border-white/20 
-                             hover:bg-white/20 transition-all duration-300 ease-in-out"
+                    className="inline-block bg-white/10 backdrop-blur-sm text-white px-6 md:px-8 py-2 md:py-3 
+                              text-xs md:text-sm uppercase tracking-wider border border-white/20 
+                              hover:bg-white/20 transition-all duration-300 ease-in-out"
                   >
                     {slide.buttonText}
                   </a>
