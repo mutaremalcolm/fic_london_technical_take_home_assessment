@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<!-- -------------------------------------------------------------------------- -->
+<!-- HEADING STUFF  -->
+<div align="center">
+  <h2>Take-Home Assessment</h2>
+  <h4>FCI London Expressions Landing Page<h4>
+  <h3> 
+    <a href='https://fic-london-technical-take-home-assessment.vercel.app/' target='_blank'>
+      <h5>live demo ↗</h5>
+    </a>
+  </h3>
+  <!-- <p align="center">
+    <a href="https://github.com/yourusername/thymia-take-home/issues">Report Bug</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/yourusername/thymia-take-home/issues">Request Feature</a>
+  </p> -->
+</div>
 
-First, run the development server:
+<!-- -------------------------------------------------------------------------- -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 👋 Introduction:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project represents my solution for the technical take-home assessment for FCI London. The objective was to design and develop a visually appealing landing page for a chocolate brownie company, Expressions. A key requirement of the task was to adopt a minimalistic approach that leverages visual elements and concise messaging to engage users, rather than relying heavily on text. The focus was on crafting an intuitive and user-friendly interface that effectively communicates the brand’s essence while maintaining simplicity and elegance.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The landing page is designed to showcase Expressions' artisanal chocolate brownies, highlighting their premium quality and indulgent appeal. Careful attention was given to typography, imagery, and layout to ensure a cohesive and modern design that resonates with the target audience. Additionally, the project incorporates responsive design principles, ensuring a seamless user experience across different devices and screen sizes. This solution reflects my ability to balance aesthetics with functionality, adhering to the provided requirements while delivering a polished product.
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+<br/> -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- -------------------------------------------------------------------------- -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<br/> <br/>

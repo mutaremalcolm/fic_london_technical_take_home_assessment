@@ -6,9 +6,10 @@ import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 
-SwiperCore.use([Navigation, Pagination, Autoplay]);
-
 const Hero = () => {
+  // Initialize Swiper modules
+  SwiperCore.use([Navigation, Pagination, Autoplay]);
+
   const slides = [
     {
       title: 'Artisanal Chocolate',
